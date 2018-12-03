@@ -27,6 +27,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '~static/css/normalize.css',
+    '~static/css/main.css'
   ],
 
   /*
@@ -53,6 +55,16 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    loaders:[
+      {
+        test:/\.(png|jpe?g|gif|svg)$/,
+        loader:"url-loader",
+        query:{
+          limit:10000,
+          name:'img/[name].[hash].[ext]'
+        }
+      }
+    ],
     /*
     ** You can extend webpack config here
     */
