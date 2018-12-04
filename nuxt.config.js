@@ -27,8 +27,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~static/css/normalize.css',
-    '~static/css/main.css'
+    '~assets/css/normalize.css',
+    '~assets/css/main.css'
   ],
 
   /*
