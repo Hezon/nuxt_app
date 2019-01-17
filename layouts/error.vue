@@ -16,6 +16,7 @@ export default {
       type: Object,
       default() {}
     }
-  }
+  },
+  layout: '404'
 }
 </script>
